@@ -3,4 +3,4 @@
 ## Landing page
 * [Search Engine Filter Reference (Censys/Shodan)](https://wue-iot-note.github.io/docs/search-engine-filter-reference/index.html)
 * [SNMP Detection & Browsing Reference](https://wue-iot-note.github.io/docs/snmp-mib-browsing-reference/index.html)
-* [Miscellaneous Scripts](https://wue-iot-note.github.io/docs/snmp-mib-browsing-reference/miscellaneous-scripts/index.html)
+* [Miscellaneous Scripts](https://wue-iot-note.github.io/docs/miscellaneous-scripts/index.html)
