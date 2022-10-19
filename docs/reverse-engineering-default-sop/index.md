@@ -22,3 +22,7 @@ return - ESC
 jump to segment - ctrl + S
 view function stack - ctrl + k when cursor at function 
 view stack variable reference - ctrl + x, after select stack address
+
+## CFF Explorer
+* examine basic file info. Check to see if the file is packed (UPX, etc). 
+* If is packed, the segments should have UPX1, UPX0. ctrl+s
