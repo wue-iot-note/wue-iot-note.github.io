@@ -50,3 +50,6 @@ VirtuallAllocEx</br>
 WriteProcessMemroy</br>
 SetThreadContext</br>
 ResumeThread
+
+* Unpack in another process (process injection)
+Create a new "thread" in another process 
