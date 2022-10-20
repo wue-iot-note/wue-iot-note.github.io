@@ -42,3 +42,11 @@ view stack variable reference - ctrl + x, after select stack address
   * set original EIP
   * run
   * exit
+
+CreateProcess, CREATE_SUSPENDED</br>
+GetThreadContext: EBX->PEB</br>
+NtUnmapViewOfSection</br>
+VirtuallAllocEx</br>
+WriteProcessMemroy</br>
+SetThreadContext</br>
+ResumeThread
