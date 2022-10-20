@@ -52,4 +52,7 @@ SetThreadContext</br>
 ResumeThread
 
 * Unpack in another process (process injection)
-Create a new "thread" in another process 
+Create a new "thread" in another process</br>
+VirtualAllocEx</br>
+WriteProcessMemory</br>
+ResumeThread</br>
