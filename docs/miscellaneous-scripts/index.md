@@ -31,3 +31,26 @@ ssh root@10.0.0.1 tcpdump -i any -U -s0 -w - 'not port 22' | wireshark -a filesi
 ```bash
 python -m pip install [module_name]
 ```
+
+### Replace obfuscated variable name in file
+```python
+# examples regex: 
+# $FLERQQJBMH = Number(" 1 ") -> 1 = Number(" 1 ")
+
+import re
+import sys
+
+#input file
+fin = open(sys.argv[1], "rt")
+#output file to write the result to
+fout = open(sys.argv[1] + ".deobfuscate", "wt")
+#for each line in the input file
+for line in fin:
+    #read replace the string and write to output file
+    for match in re.finditer(r"(\$FL[0-9A-Z]{8})\s\=\sNumber\s\(\s\"\s([0-9]+)\s\"\s\)", line):
+        line = line.replace(match.groups()[0], match.groups()[1])
+    fout.write(line)
+#close input and output files
+fin.close()
+fout.close()
+```
