@@ -24,7 +24,7 @@ kill -9 `pgrep firefox`
 ### Remote tcpdump
 ```bash
 # stop caputre after 1 gigbyte
-ssh root@10.0.0.1 tcpdump -i any -U -s0 -w - 'not port 22' | wireshark -a filesize:1000000 -k -i -
+ssh root@192.168.8.1 tcpdump -i br-guest -U -s0 -w - 'not port 22' | wireshark -a filesize:1000000 -k -f "host 192.168.9.209" -i -
 ```
 
 ### Python install
