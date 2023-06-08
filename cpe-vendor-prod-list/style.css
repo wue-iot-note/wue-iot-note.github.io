@@ -1,0 +1,45 @@
+body {
+    color: yellow;
+    background-color: black;
+}
+
+input[type="text"] {
+    background: transparent;
+    border: none;
+    color: yellow;
+    margin: 10px;
+    border: 1px solid #fff;
+}
+
+select {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: yellow;
+}
+
+select option {
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.grid-container {
+    border: 1px solid yellow;
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    margin: auto;
+    width: 50%;
+}
+
+.grid-item {
+    padding: 10px;
+}
+
+#result{
+    width: 80%;
+    min-height: 100px;
+    border: 1px solid yellow;
+    margin: 10px auto;
+}

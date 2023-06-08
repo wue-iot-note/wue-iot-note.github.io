@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>NVD CPE Query</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+    <h1>CPE search</h1>
+    <div class="grid-container">
+        <div class="grid-item">Vendor:</div>
+        <input class="grid-item" type="text" id="cpe_vendor" value="Cisco">
+        <div></div>
+        <div></div>
+
+        <div class="grid-item">Part:</div>
+        <select  class="grid-item" id="cpe_part">
+            <option value="*">all</option>
+            <option value="a">a</option>
+            <option value="o">o</option>
+            <option value="h" selected>h</option>
+        </select>
+        <div></div>
+        <div></div>
+
+        <div class="grid-item">Keyword:</div>
+        <input  class="grid-item" type="text" id="cpe_keyword" value="">
+        <div></div>
+        <button class="grid-item" type="button" onclick="runQuery()">Search</button>
+    </div>
+
+    <div id="result">
+
+    </div>
+
+    <script>
+        var resutl_box = document.getElementById("result")
+        var xhttp = new XMLHttpRequest();
+        var url = "https://services.nvd.nist.gov/rest/json/cpes/2.0?cpeMatchString=cpe:2.3";
+
+        function runQuery() {
+            let vendor_name = document.getElementById("cpe_vendor").value;
+            let part = document.getElementById("cpe_part").value;
+            let keyword = document.getElementById("cpe_keyword").value;
+            let list = [];
+
+            resutl_box.innerHTML = "loading...";
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    resutl_box.innerHTML = "";
+                    list = [];
+                    this.response.products.forEach((product) => {
+                        let name = product.cpe.cpeName.split(":")[4];
+                        name = name.replace('_firmware', '');
+                        if (!list.includes(name) && name.includes(keyword)) {
+                            list.push(name);
+                        }
+                    });
+                    list.forEach((a) => {
+                        resutl_box.innerHTML += a + "<br/>";
+                    })
+                }
+            };
+            xhttp.open("GET", url + ":" + part + ":" + vendor_name, true);
+            xhttp.responseType = 'json';
+            xhttp.send();
+        }
+    </script>
+
+</body>
+
+</html>
