@@ -41,6 +41,13 @@ layout: default
 
 ## UMAS Function Code
 
+request information about a device
+| Code | Function | Description |
+|:-----|:---------|:------------|
+| 0x02 | pu_GetPlcInfo | requests information about the device |
+| 0x04 | pu_GetPlcStatus | queries the PLC status |
+| 0x06 | pu_GetMemoryCardInfo | requests information about the device’s SD card |
+
 ## Wireshark Dissector
 [modbus-umas-schneider.lua](https://github.com/biero-el-corridor/Wireshark-UMAS-Modicon-M340-protocol/blob/main/modbus-umas-schneider.lua)
 
