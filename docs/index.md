@@ -38,3 +38,11 @@ layout: default
         </tr>
     </tbody>
 </table>
+
+## UMAS Function Code
+
+## Wireshark Dissector
+[modbus-umas-schneider.lua](https://github.com/biero-el-corridor/Wireshark-UMAS-Modicon-M340-protocol/blob/main/modbus-umas-schneider.lua)
+
+## Device scanning
+[modicon-info.nse](https://github.com/digitalbond/Redpoint/blob/master/modicon-info.nse)
