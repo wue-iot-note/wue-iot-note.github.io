@@ -42,6 +42,7 @@ layout: default
 ## UMAS Function Code
 
 request information about a device
+
 | Code | Function | Description |
 |:-----|:---------|:------------|
 | 0x02 | pu_GetPlcInfo | requests information about the device |
