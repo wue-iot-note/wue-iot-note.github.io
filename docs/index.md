@@ -1,6 +1,6 @@
 ---
 title: Schneider Electric UMAS
-layout: defaults
+layout: default
 ---
 
 # UI Components
