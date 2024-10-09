@@ -3,7 +3,7 @@ title: Schneider Electric UMAS
 layout: default
 ---
 
-# UI Components
+# Schneider Electric UMAS
 {: .no_toc }
 
 ## Table of contents
@@ -17,28 +17,24 @@ layout: default
 ## Structure
 
 <table>
-    <thead>
-        <tr>
-            <th>Layer 2</th>
-            <th>Layer 2</th>
-            <th>Layer 3</th>
-        </tr>
-    </thead>
     <tbody>
         <tr>
-            <td rowspan=4>L1 Name</td>
-            <td rowspan=2>L2 Name A</td>
-            <td>L3 Name A</td>
+            <th>Modbus/TCP</th>
+            <th colspan=5>UMAS</th>
         </tr>
         <tr>
-            <td>L3 Name B</td>
+            <th>Modbus Header</th>
+            <th>Func Code (\x5A)</th>
+            <th>Session Key</th>
+            <th>UMAS Func</th>
+            <th>Data</th>
         </tr>
         <tr>
-            <td rowspan=2>L2 Name B</td>
-            <td>L3 Name C</td>
-        </tr>
-        <tr>
-            <td>L3 Name D</td>
+            <th></th>
+            <th>1 Byte</th>
+            <th>1 Byte</th>
+            <th>1 Byte</th>
+            <th>1 Byte</th>
         </tr>
     </tbody>
 </table>
