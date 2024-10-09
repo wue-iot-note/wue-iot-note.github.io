@@ -50,6 +50,6 @@ request information about a device
 | 0x06 | pu_GetMemoryCardInfo | requests information about the device’s SD card |
 
 ## Reference
-[modbus-umas-schneider.lua](https://github.com/biero-el-corridor/Wireshark-UMAS-Modicon-M340-protocol/blob/main/modbus-umas-schneider.lua)
-[modicon-info.nse](https://github.com/digitalbond/Redpoint/blob/master/modicon-info.nse)
+[modbus-umas-schneider.lua](https://github.com/biero-el-corridor/Wireshark-UMAS-Modicon-M340-protocol/blob/main/modbus-umas-schneider.lua) \
+[modicon-info.nse](https://github.com/digitalbond/Redpoint/blob/master/modicon-info.nse) \
 [Kaspersky ICS-Cert- The secrets of Schneider Electric’s UMAS protocol](https://ics-cert.kaspersky.com/publications/reports/2022/09/29/the-secrets-of-schneider-electrics-umas-protocol/#umas-protocol)
