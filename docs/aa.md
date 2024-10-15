@@ -3,7 +3,7 @@ title: BER Encoding
 layout: default
 ---
 
-# Schneider Electric UMAS
+# BER Encoding
 {: .no_toc }
 
 ## Table of contents
@@ -14,7 +14,19 @@ layout: default
 
 ---
 
-## Structure
+## Basic Encoding Rules Overview
+
+BER uses a Tag-Length-Value (TLV) format for encoding information. The type or tag indicates what kind of data follows, the length indicates the length of the data that follows, and the value represents the actual data. Each value may consist of one or more TLV-encoded values, each with its own identifier, length, and contents.
+
+<table>
+    <tbody>
+        <tr>
+            <th>T</th>
+            <th>L</th>
+            <th>V</th>
+        </tr>
+    </tbody>
+</table>
 
 <table>
     <tbody>
