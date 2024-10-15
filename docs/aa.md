@@ -39,25 +39,20 @@ The identifier consists of three parts:
             <th>Form (1 bit)</th>
             <th>Number (5 bit)</th>
         </tr>
-        <tr>
-            <th>00 universal</th>
-            <th>0 primitive</th>
-            <th></th>
-        </tr>
-        <tr>
-            <th>01 application</th>
-            <th>1 constructed</th>
-            <th></th>
-        </tr>
-        <tr>
-            <th>10 context-specific</th>
-            <th></th>
-            <th></th>
-        </tr>
-        <tr>
-            <th>11 private</th>
-            <th></th>
-            <th></th>
-        </tr>
     </tbody>
 </table>
+
+Class
+
+- [ 00 ] universal class. Most BER elements have a universal type, so any element with a universal type specifies what kind of data it holds. Examples of universal types include 0x01 (BOOLEAN), 0x02 (INTEGER), 0x04 (OCTET STRING), 0x05 (NULL), 0x0A (ENUMERATED), 0x30 (SEQUENCE), and 0x31 (SET). The binary encodings for all of those type values have the leftmost two bits set to zero.
+
+- [ 01 ] The application-specific class. This class allows an application to define its own types that are consistent throughout that application. In this context, LDAP is considered an application. For example, when 0x42 appears in LDAP, it indicates an unbind request protocol op, because RFC 2251 section 4.3 states that the unbind request protocol op has a type of [APPLICATION 2].
+
+- [ 10 ] The context-specific class. This class indicates that the type is specific to a particular usage within a given application. The same type can be re-used in different contexts in the same application as long as there is enough other information to determine which context is applicable in a given situation. For example, in the context of the credentials in a bind request protocol op, the context-specific type 0x80 is used to hold the bind password, but in the context of an extended operation it would be used to hold the request OID.
+
+- [ 11 ] The private class, not typically used in LDAP.
+
+Form
+
+- [ 0 ] primitive - is used with types that do not contain other types (INTEGERs and BOOLEANs). The contents octets directly represent the encoded value.
+- [ 1 ] constructed - is used for types that can include values of other types (SEQUENCEs).
