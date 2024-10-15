@@ -36,28 +36,16 @@ The identifier consists of three parts:
     <tbody>
         <tr>
             <th colspan=2>Class</th>
-            <th colspan=1>Form</th>
+            <th >Form</th>
             <th colspan=5>Number</th>
         </tr>
         <tr>
             <th colspan=2>2 bit</th>
-            <th colspan=1>1 bit</th>
+            <th >1 bit</th>
             <th colspan=5>5 bit</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
         </tr>
     </tbody>
 </table>
-
-Class
-00 universal
-01 application
-10 context-specific
-11 private
-
 
 <table>
     <tbody>
