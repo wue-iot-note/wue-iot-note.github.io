@@ -56,3 +56,27 @@ Form
 
 - [ 0 ] primitive - is used with types that do not contain other types (INTEGERs and BOOLEANs). The contents octets directly represent the encoded value.
 - [ 1 ] constructed - is used for types that can include values of other types (SEQUENCEs).
+
+Number
+
+- For casese when identifer is 0 <=  value <= 30 </br> the Number filed will just be the value of the identifer. e.g. For Identifier 13:
+
+<table>
+    <tbody>
+        <tr>
+            <th colspan=2>Class</th>
+            <th>Form</th>
+            <th colspan=5>Number</th>
+        </tr>
+        <tr>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </tbody>
+</table>
