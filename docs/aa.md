@@ -35,24 +35,29 @@ The identifier consists of three parts:
 <table>
     <tbody>
         <tr>
-            <th colspan=2>Class</th>
-            <th >Form</th>
-            <th colspan=5>Number</th>
+            <th>Class (2 bit)</th>
+            <th>Form (1 bit)</th>
+            <th>Number (5 bit)</th>
         </tr>
         <tr>
-            <th colspan=2>2 bit</th>
-            <th >1 bit</th>
-            <th colspan=5>5 bit</th>
+            <th>00 universal</th>
+            <th>0 primitive</th>
+            <th></th>
         </tr>
         <tr>
-            <th ></th>
-            <th ></th>
-            <th ></th>
-            <th ></th>
-            <th ></th>
-            <th ></th>
-            <th ></th>
-            <th ></th>
+            <th>01 application</th>
+            <th>1 constructed</th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>10 context-specific</th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th>11 private</th>
+            <th></th>
+            <th></th>
         </tr>
     </tbody>
 </table>
