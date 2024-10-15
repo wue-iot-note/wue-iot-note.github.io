@@ -21,12 +21,43 @@ BER uses a Tag-Length-Value (TLV) format for encoding information. The type or t
 <table>
     <tbody>
         <tr>
-            <th>T</th>
-            <th>L</th>
-            <th>V</th>
+            <th>T (Tag)</th>
+            <th>L (Len)</th>
+            <th>V (Value)</th>
         </tr>
     </tbody>
 </table>
+
+## Encoding Identifiers (Tags)
+
+The identifier consists of three parts:
+
+<table>
+    <tbody>
+        <tr>
+            <th colspan=2>Class</th>
+            <th colspan=1>Form</th>
+            <th colspan=5>Number</th>
+        </tr>
+        <tr>
+            <th colspan=2>2 bit</th>
+            <th colspan=1>1 bit</th>
+            <th colspan=5>5 bit</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </tbody>
+</table>
+
+Class
+00 universal
+01 application
+10 context-specific
+11 private
+
 
 <table>
     <tbody>
