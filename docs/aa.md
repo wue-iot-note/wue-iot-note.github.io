@@ -44,6 +44,11 @@ The identifier consists of three parts:
             <th >1 bit</th>
             <th colspan=5>5 bit</th>
         </tr>
+        <tr>
+            <th ></th>
+            <th ></th>
+            <th ></th>
+        </tr>
     </tbody>
 </table>
 
