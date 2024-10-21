@@ -42,7 +42,7 @@ The identifier consists of three parts:
     </tbody>
 </table>
 
-Class
+### Class
 
 - [ 00 ] universal class. Most BER elements have a universal type, so any element with a universal type specifies what kind of data it holds. Examples of universal types include 0x01 (BOOLEAN), 0x02 (INTEGER), 0x04 (OCTET STRING), 0x05 (NULL), 0x0A (ENUMERATED), 0x30 (SEQUENCE), and 0x31 (SET). The binary encodings for all of those type values have the leftmost two bits set to zero.
 
@@ -52,12 +52,12 @@ Class
 
 - [ 11 ] The private class, not typically used in LDAP.
 
-Form
+### Form
 
 - [ 0 ] primitive - is used with types that do not contain other types (INTEGERs and BOOLEANs). The contents octets directly represent the encoded value.
 - [ 1 ] constructed - is used for types that can include values of other types (SEQUENCEs).
 
-Number
+### Number
 
 - For casese when identifer is 0 <=  value <= 30 </br> the Number filed will just be the value of the identifer. e.g. For Identifier 13:
 
