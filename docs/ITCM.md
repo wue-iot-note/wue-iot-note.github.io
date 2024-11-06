@@ -3,6 +3,19 @@ title: ITCM (Interoperable Train Control Messaging)
 layout: default
 ---
 
+# ITCM (Interoperable Train Control Messaging)
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Basic Message Packet Structure
+
 <table>
   <tr>
     <th class="fs-1">L2/L1<br>Headers</th>
