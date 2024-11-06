@@ -16,14 +16,14 @@ layout: default
 
 ## Basic Message Packet Structure
 
-<table style="width:100%">
+<table>
   <tr>
-    <th class="fs-1">L2/L1<br>Headers</th>
-    <th class="fs-1">IP<br>Header</th>
-    <th class="fs-1">TCP<br>Header</th>
-    <th class="fs-1">Class D<br>Header</th>
-    <th class="fs-1">EMP<br>Header</th>
-    <th class="fs-1">CTC<br>Message</th>
-    <th class="fs-1">EMP<br>Footer</th>
+    <th class="fs-1" style="width: calc(100% / 7)">L2/L1<br>Headers</th>
+    <th class="fs-1" style="width: calc(100% / 7)">IP<br>Header</th>
+    <th class="fs-1" style="width: calc(100% / 7)">TCP<br>Header</th>
+    <th class="fs-1" style="width: calc(100% / 7)">Class D<br>Header</th>
+    <th class="fs-1" style="width: calc(100% / 7)">EMP<br>Header</th>
+    <th class="fs-1" style="width: calc(100% / 7)">CTC<br>Message</th>
+    <th class="fs-1" style="width: calc(100% / 7)">EMP<br>Footer</th>
   </tr>
 <table>
