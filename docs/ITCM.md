@@ -16,7 +16,7 @@ layout: default
 
 ## Basic Message Packet Structure
 
-<table>
+<table style="width:100%">
   <tr>
     <th class="fs-1">L2/L1<br>Headers</th>
     <th class="fs-1">IP<br>Header</th>
