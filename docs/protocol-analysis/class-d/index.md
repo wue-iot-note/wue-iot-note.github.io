@@ -1,12 +1,12 @@
 ---
-title: ITCM
+title: Class D
 parent: Protocol Analysis
 nav_order: 1
 layout: default
 has_toc: false
 ---
 
-# ITCM (Interoperable Train Control Messaging)
+# Class D
 {: .no_toc }
 
 ## Table of contents
@@ -18,8 +18,7 @@ has_toc: false
 ---
 
 ### Overview
-Interoperable Train Control Messaging (ITCM) is a messaging system used by the railroad industry. The Centralized train control (CTC)
-messages are transported over ITCM. A railroad edge messaging protocol (EMP) header and a railroad Class D messaging transport header are appended to the message to generate a packet. The packet is transmitted to a receiving one of the railroad dispatch system and the railroad wayside system across the railroad communications system.
+Class D is a protocol that converts a stream based TCP protocol to a message or transaction based protocol. The Class D protocol is intended for applications requiring reliable point-to-point message delivery.
 
 ### Basic Message Packet Structure
 
@@ -31,7 +30,8 @@ messages are transported over ITCM. A railroad edge messaging protocol (EMP) hea
 
 ![](./figure-3.jpeg)
 
-### EMP General Packet Structure
+### EMP (Edge Messaging Protoco) General Packet Structure
+An AAR published application level protocol.
 
 ![](./figure-4.jpeg)
 
@@ -44,7 +44,7 @@ messages are transported over ITCM. A railroad edge messaging protocol (EMP) hea
 0040   30 30 30 3a 74 6d 63 00 a5 e8 b6 fb fb 82 0e 8a   000:tmc.........
 0050   f7 bd ef 2a 0f 2d f0 3d 82 d6 df 53 03            ...*.-.=...S.
 
-ITCM
+Class D Transport Laywer
     STX: (\x02)
     Protocol Version: (\x02)
     COMMID: (\x00001D01) 7425
@@ -74,7 +74,7 @@ tcp.payload[0:2] == 02:02 && tcp.payload[6:1] == 01 &&  tcp.payload[13:2] == XX:
 ```
 
 ### EMP Message Body - Application
-[ITC WIU](/../itc-wiu)
+[ITC WIU](./itc-wiu/)
 
 ### Reference
 - AAR Manual of Standards and Recommended Practices Railway Electronics - CLASS D MESSAGING SPECIFICATION
