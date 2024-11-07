@@ -1,5 +1,6 @@
 ---
 title: ITCM (Interoperable Train Control Messaging)
+parent: Protocol Analysis
 layout: default
 ---
 
@@ -15,6 +16,8 @@ layout: default
 ---
 
 ## Basic Message Packet Structure
+
+![](./large-image.jpg)
 
 <table>
     <tbody>
