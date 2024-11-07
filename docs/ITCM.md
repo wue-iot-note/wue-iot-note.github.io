@@ -28,6 +28,7 @@ layout: default
         <tr>
             <th>CTC Message</th>
             <th>EMP Header</th>
+            <th colspan=2></th>
         </tr>
     </tbody>
 </table>
