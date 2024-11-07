@@ -16,8 +16,8 @@ layout: default
 
 ## Basic Message Packet Structure
 
-<div class="code-example" markdown="1">
+```markdown
 ---------------------------------------------------------------
 L2/L1   | IP     | TCP    | Class D | EMP    | CTC     | EMP
 Headers | Header | Header | Header  | Header | Message | Footer
-<div>
+```
