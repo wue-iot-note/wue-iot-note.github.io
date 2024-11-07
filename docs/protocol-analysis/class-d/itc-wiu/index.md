@@ -24,7 +24,7 @@ ITCM is appeneded as part of EMP message body. Refer to [Class D](../) for addit
 
 ### Message Type (ID)
 
-#### Wayside Interface Unit (WIU)<br>
+#### Wayside Interface Unit (WIU)
 Reference: AAR S‐9202 - Interoperable Train Control Wayside Interface Unit Requirements Railway Electronics<br>
 
 | Message Type           | hex   | decimal |
@@ -35,7 +35,7 @@ Reference: AAR S‐9202 - Interoperable Train Control Wayside Interface Unit Req
 | BeaconOn               | 14 50 | 5200    |
 | Time                   | 14 B4 | 5300    |
 
-#### Wayside Device Controller (WDC)<br>
+#### Wayside Device Controller (WDC)
 Reference: US-10160466B1, US-2019126961<br>
 
 | Message Type                  | hex   | decimal |
@@ -51,7 +51,7 @@ Reference: US-10160466B1, US-2019126961<br>
 | WDC Reset Sequence Number Ack | 1B D8 | 7128    |
 
 ### Automated Train Operation (ATO)
-Reference: Automated Train Operation Interface Requirements Specification Development Summary Report
+Reference: Automated Train Operation Interface Requirements Specification Development Summary Report<br>
 
 | Message Type                                             | hex   | decimal |
 |:---------------------------------------------------------|:------|:--------|
