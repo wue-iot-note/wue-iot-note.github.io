@@ -25,3 +25,9 @@ layout: default
 ![](./figure-2.jpeg)
 
 ![](./figure-3.jpeg)
+
+### EMP Packet Structure
+
+```
+tcp.payload[0:2] == 02:02 && tcp.payload[6:1] == 01 &&  tcp.payload[13:2] == 1B:D0
+```
