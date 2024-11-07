@@ -1,5 +1,6 @@
 ---
 title: Schneider Electric UMAS
+parent: Protocol Analysis
 layout: default
 ---
 
