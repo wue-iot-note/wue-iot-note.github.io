@@ -71,3 +71,10 @@ wireshark filter for EMP message type (sub XX to message id in hex)
 ```
 tcp.payload[0:2] == 02:02 && tcp.payload[6:1] == 01 &&  tcp.payload[13:2] == XX:XX
 ```
+
+### EMP Message Body - Application
+
+### Reference
+- AAR Manual of Standards and Recommended Practices Railway Electronics - CLASS D MESSAGING SPECIFICATION
+Standard S-9356
+- Federal Railroad Administration - Railroad Wireless Communications Roadmap
