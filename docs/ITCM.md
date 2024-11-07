@@ -16,19 +16,56 @@ layout: default
 
 ## Basic Message Packet Structure
 
-```markdown
---------------------------------------------------------------------------------------------------------
-L2/L1 Headers | IP Header | TCP Header| Class D Header | EMP Header \x02 | CTC Message | EMP Header \x03
---------------------------------------------------------------------------------------------------------
-```
+<table>
+    <tbody>
+        <tr>
+            <th>L2/L1 Headers</th>
+            <th>IP Header</th>
+            <th>TCP Header</th>
+            <th>Class D Header</th>
+            <th>EMP Header \x02 </th>
+        </tr>
+        <tr>
+            <th>CTC Message</th>
+            <th>EMP Header</th>
+        </tr>
+    </tbody>
+</table>
 
 ### Class D Packet Structure
 
-```markdown
-1 byte | 1 byte           | 4 byte | 1 byte       | 1 byte          | 4 byte      | variable     | 1 byte      
----------------------------------------------------------------------------------------------------------
-STX    | Protocol Version | COMMID | Message type | Message Version | Data Length | Message Body | ETX
-```
+
+<table>
+    <tbody>
+        <tr>
+            <th>1 byte</th>
+            <th>1 byte</th>
+            <th>4 byte</th>
+            <th>1 byte</th>
+            <th>1 byte</th>
+        </tr>
+        <tr>
+            <th>STX</th>
+            <th>Protocol Version</th>
+            <th>COMMID</th>
+            <th>Message type</th>
+            <th>Message Version</th>
+        </tr>
+        <tr>
+            <th>4 byte</th>
+            <th>variable</th>
+            <th>1 byte</th>
+            <th colspan=2></th>
+        </tr>
+        <tr>
+            <th>Data Length</th>
+            <th>Message Body</th>
+            <th>ETX</th>
+            <th colspan=2></th>
+        </tr>
+    </tbody>
+</table>
+
 STX: Start of message delimiter ASCII (0x02)
 ETX: End of message delimiter ASCII (0x03)
 
