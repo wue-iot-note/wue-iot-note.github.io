@@ -20,25 +20,9 @@ layout: default
 
 ![](./figure-1.jpeg)
 
-<table>
-    <tbody>
-        <tr>
-            <th>L2/L1 Headers</th>
-            <th>IP Header</th>
-            <th>TCP Header</th>
-            <th>Class D Header</th>
-            <th>EMP Header \x02 </th>
-        </tr>
-        <tr>
-            <th>CTC Message</th>
-            <th>EMP Header</th>
-            <th colspan=2></th>
-        </tr>
-    </tbody>
-</table>
-
 ### Class D Packet Structure
 
+![](./figure-2.jpeg)
 
 <table>
     <tbody>
