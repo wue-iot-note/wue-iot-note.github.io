@@ -19,3 +19,7 @@ messages are transported over ITCM. A railroad edge messaging protocol (EMP) hea
 
 ### Basic Message Packet Structure
 ITCM is appeneded as part of EMP message body. Refer to [Class D](../index.md/) for additional details
+
+![](./figure-1.jpeg)
+
+### Message Type (ID)
