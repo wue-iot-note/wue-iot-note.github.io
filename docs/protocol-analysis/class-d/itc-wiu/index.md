@@ -50,7 +50,7 @@ Reference: US-10160466B1, US-2019126961<br>
 | WDC Reset Sequence Number     | 1B D7 | 7127    |
 | WDC Reset Sequence Number Ack | 1B D8 | 7128    |
 
-### Automated Train Operation (ATO)
+#### Automated Train Operation (ATO)
 Reference: Automated Train Operation Interface Requirements Specification Development Summary Report<br>
 
 | Message Type                                             | hex   | decimal |
