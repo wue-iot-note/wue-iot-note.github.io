@@ -21,7 +21,7 @@ References:<br>
 [https://www.zerodayinitiative.com/advisories/ZDI-16-223/](https://www.zerodayinitiative.com/advisories/ZDI-16-223/)<br>
 [https://github.com/coldfusion39/VertXploit/tree/master](https://github.com/coldfusion39/VertXploit/tree/master)
 ```
-echo -n "discover;013;" | netcat -u XXX.XXX.XXX.XXX
+echo -n "discover;013;" | netcat -u XXX.XXX.XXX.XXX 4070
 ```
 ```
 0000   64 69 73 63 6f 76 65 72 65 64 3b 30 39 36 3b 30   discovered;096;0
