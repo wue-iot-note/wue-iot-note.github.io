@@ -61,6 +61,15 @@ The identifier consists of three parts:
 
 - For casese when identifer is 0 <=  value <= 30 </br> the Number filed will just be the value of the identifer. e.g. For Identifier 13:
 
+| Class || Form | Number |
+
+| Class | Form              | Number |
+|:-------------|:------------------|:------|
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
+
 <table>
     <tbody>
         <tr>

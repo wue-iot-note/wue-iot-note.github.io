@@ -23,6 +23,7 @@ ITCM is appeneded as part of EMP message body. Refer to [Class D](../) for addit
 ![](./figure-1.jpeg)
 
 ### Message Type (ID)
+Positive Train Control Office-Locomotive Segment Interface Control Document (ICD)<br>
 
 #### Wayside Interface Unit (WIU)
 Reference: AAR S‐9202 - Interoperable Train Control Wayside Interface Unit Requirements Railway Electronics<br>
@@ -52,6 +53,22 @@ Reference: US-10160466B1, US-2019126961<br>
 
 #### Automated Train Operation (ATO)
 Reference: Automated Train Operation Interface Requirements Specification Development Summary Report<br>
+
+| Message Type                                             | hex   | decimal |
+|:---------------------------------------------------------|:------|:--------|
+| ITC-ATO Ex to ITC-ATOSS BO Poll                          | 00 64 | 100     |
+| ITC-ATOSS BO to ITC-ATO Ex Poll ACK                      | 00 65 | 101     |
+| ITC-ATOSS BO Poll Registration                           | 00 66 | 102     |
+| ITC-ATO Ex/ITC-ATO SP Configuration Version List Request | 00 67 | 103     |
+| ITC-ATO Ex System State Report                           | 00 6E | 110     |
+| Exception Report                                         | 00 6F | 111     |
+| Information Request ACK                                  | 00 72 | 114     |
+| Information Retrieval                                    | 00 73 | 115     |
+| Condition Resolution ACK                                 | 00 74 | 116     |
+
+
+#### Interoperable Full Moving Block (FMB)
+Reference: Full Moving Block Concept and Requirements Specification for Railroad Operations<br>
 
 | Message Type                                             | hex   | decimal |
 |:---------------------------------------------------------|:------|:--------|
