@@ -1,11 +1,11 @@
 ---
-title: Device Discovery
+title: Device Broadcast Discovery
 nav_order: 2
 layout: default
 has_toc: false
 ---
 
-# Class D
+# Device Broadcast Discovery
 {: .no_toc }
 
 ## Table of contents
