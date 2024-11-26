@@ -55,3 +55,25 @@ echo "M-SEARCH * HTTP/1.1\nHost:239.255.255.250:1900\nMan: \"ssdp:discover\"\nST
 00d0   38 30 35 31 39 31 32 44 32 42 34 44 31 0d 0a 0d   8051912D2B4D1...
 00e0   0a                                                .
 ```
+
+## Axis - VAPIX mDNS
+References:<br>
+[https://developer.axis.com/vapix/network-video/mdns-sd-api#discover](https://developer.axis.com/vapix/network-video/mdns-sd-api#discover)<br>
+```
+dig _axis-video._tcp.local ptr @XXX.XXX.XXX.XXX -p 5353
+dig _axis-nvr._tcp.local ptr @XXX.XXX.XXX.XXX -p 5353
+```
+```
+0000   84 d1 84 00 00 01 00 01 00 00 00 04 0b 5f 61 78   ............._ax
+0010   69 73 2d 76 69 64 65 6f 04 5f 74 63 70 05 6c 6f   is-video._tcp.lo
+0020   63 61 6c 00 00 0c 00 01 c0 0c 00 0c 00 01 00 00   cal.............
+0030   00 0a 00 1c 19 41 58 49 53 20 32 34 31 51 41 20   .....AXIS 241QA 
+0040   2d 20 30 30 34 30 38 43 37 33 46 45 36 45 c0 0c   - 00408C73FE6E..
+0050   c0 34 00 21 00 01 00 00 00 0a 00 1a 00 00 00 00   .4.!............
+0060   00 50 11 61 78 69 73 2d 30 30 34 30 38 63 37 33   .P.axis-00408c73
+0070   66 65 36 65 c0 1d c0 34 00 10 00 01 00 00 00 0a   fe6e...4........
+0080   00 18 17 6d 61 63 61 64 64 72 65 73 73 3d 30 30   ...macaddress=00
+0090   34 30 38 43 37 33 46 45 36 45 c0 62 00 01 00 01   408C73FE6E.b....
+00a0   00 00 00 0a 00 04 80 df 0a 0e c0 62 00 01 00 01   ...........b....
+00b0   00 00 00 0a 00 04 a9 fe 6b a5                     ........k.
+```
