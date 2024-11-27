@@ -30,7 +30,7 @@ References: [https://www.ranecommercial.com/legacy/note161.html](https://www.ran
 ![](./figure-2.jpeg)
 
 ### Common Data Types
-
+Refer to [BER Encoding] for more details (./ber-encoding/)
 | Primitive Type | Identifier | Complex Data Types | Identifier |
 |:---------------|:-----------|:-------------------|:-----------|
 | Integer        | 0x02       | get-request        | 0xA0       |
