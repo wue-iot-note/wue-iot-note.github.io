@@ -36,6 +36,8 @@ References: [https://www.ranecommercial.com/legacy/note161.html](https://www.ran
 0030   64 43 6f 6d 20 52 58 31 35 30 31                  dCom RX1501
 ```
 
+According to BER, the first two numbers of any OID (x.y) are encoded as one value using the formula (40*x)+y. The first two numbers in an SNMP OID are always 1.3. Therefore, the first two numbers of an SNMP OID are encoded as 43 or 0x2B, because (40*1)+3 = 43.
+
 ### Common Data Types
 Refer to [BER Encoding](./ber-encoding/) for more details
 
