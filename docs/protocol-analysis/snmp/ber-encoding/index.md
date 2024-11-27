@@ -26,7 +26,9 @@ BER uses a Tag-Length-Value (TLV) format for encoding information. The type or t
     </tbody>
 </table>
 
-## Encoding Identifiers (Tags)
+## Encoding Identifiers 
+
+### Tags
 
 The identifier consists of three parts:
 
@@ -40,7 +42,7 @@ The identifier consists of three parts:
     </tbody>
 </table>
 
-### Class
+#### Class
 
 - [ 00 ] universal class. Most BER elements have a universal type, so any element with a universal type specifies what kind of data it holds. Examples of universal types include 0x01 (BOOLEAN), 0x02 (INTEGER), 0x04 (OCTET STRING), 0x05 (NULL), 0x0A (ENUMERATED), 0x30 (SEQUENCE), and 0x31 (SET). The binary encodings for all of those type values have the leftmost two bits set to zero.
 
@@ -50,40 +52,23 @@ The identifier consists of three parts:
 
 - [ 11 ] The private class, not typically used in LDAP.
 
-### Form
+#### Form
 
 - [ 0 ] primitive - is used with types that do not contain other types (INTEGERs and BOOLEANs). The contents octets directly represent the encoded value.
 - [ 1 ] constructed - is used for types that can include values of other types (SEQUENCEs).
 
-### Number
+#### Number
 
-- For casese when identifer is 0 <=  value <= 30 </br> the Number filed will just be the value of the identifer. e.g. For Identifier 13:
+- 0 <= tag <= 30, the last five bits of the identifier octet as an unsigned binary integer.
+- 31 < =tag <= 127, the last five bits of this first octet are all set to 1, and the actual value of the tag's number is encoded in one or more following octets. The final octet of this series has bit 7 set to 0.
+- tag > 127, The other octets set bit 7 to 1. The actual value of the tag's number is encoded as an unsigned binary integer, as the concatenation of the rightmost seven bits of each octet.
 
-| Class || Form | Number |
+### Length
 
-| Class | Form              | Number |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+There are three ways to encode lengths in BER:
+- Short form - for lengths between 0 and 127, the one-octet short form can be used. bit 7 of the length octet is set to 0, and the length is encoded as an unsigned binary value in the octet's rightmost seven bits.
+- Long form - for lengths between 0 and 2^1008 octets, it starts with an octet that contains the length of the length, followed by the actual length of the encoded value.
+- Indefinite form - used only with constructed encodings. when the length of the value being encoded is not known at the beginning. A single ooctet is placed between the identifier and the contents that contain the fixed value hexadecimal 80. The end of the encoded value is indicated by two special end-of-contents octets, each containing all 0's.
 
-<table>
-    <tbody>
-        <tr>
-            <th colspan=2>Class</th>
-            <th>Form</th>
-            <th colspan=5>Number</th>
-        </tr>
-        <tr>
-            <th>-</th>
-            <th>-</th>
-            <th>-</th>
-            <th>0</th>
-            <th>1</th>
-            <th>1</th>
-            <th>0</th>
-            <th>1</th>
-        </tr>
-    </tbody>
-</table>
+![](./figure-1.jpeg)
+
