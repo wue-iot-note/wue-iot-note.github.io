@@ -29,6 +29,13 @@ References: [https://www.ranecommercial.com/legacy/note161.html](https://www.ran
 
 ![](./figure-2.jpeg)
 
+```
+0000   30 39 02 01 01 04 06 70 75 62 6c 69 63 a2 2c 02   09.....public.,.
+0010   04 5a 29 c6 d4 02 01 00 02 01 00 30 1e 30 1c 06   .Z)........0.0..
+0020   08 2b 06 01 02 01 01 01 00 04 10 52 75 67 67 65   .+.........Rugge
+0030   64 43 6f 6d 20 52 58 31 35 30 31                  dCom RX1501
+```
+
 ### Common Data Types
 Refer to [BER Encoding] for more details (./ber-encoding/)
 
@@ -46,11 +53,16 @@ Refer to [BER Encoding] for more details (./ber-encoding/)
 
 ### Common MIB & OID for device identification
 
-General
+MIBs describe the structure of the management data of a device subsystem; they use a hierarchical namespace containing object identifiers (OID). Each OID identifies a variable that can be read or set via SNMP. Two of the commonly seen node are "1.3.6.1.2.1" and "1.3.6.1.4.1". The first one is used in MIB-II, while the later one is "enterprise" specific node.<br>
+
+The number immediately followed "1.3.6.1.4.1" is called PEN (Private Enterprise Numbers). For instance, "1.3.6.1.4.1.9" is used to identify the organization "Cisco", and the child OIDs are used to primarily for managing Cisco devices. All assigned PENs can be found on the [Internet Assigned Numbers Authority (IANA)](https://www.iana.org/assignments/enterprise-numbers/?q=cisco) web site.<br>
+
+Tables below are examples of MIB file and OID commonly used for device identification.
 
 | MIB        | OID                     | Value                     | Description                       |
 |:-----------|:------------------------|:--------------------------|:----------------------------------|
 | MIB-II     | sysDescr                | 1.3.6.1.2.1.1.1           | textual description of the entity |
+|            | sysObjectID             | 1.3.6.1.2.1.1.2           | vendor's authoritative identification of thenetwork management subsystem contained in the entity |
 | ENTITY-MIB | entPhysicalSoftwareRev  | 1.3.6.1.2.1.47.1.1.1.1.10 | vendor specifc software revision  |
 |            | entPhysicalModelName    | 1.3.6.1.2.1.47.1.1.1.1.13 | vendor specific model name        |
 |            | entPhysicalDescr        | 1.3.6.1.2.1.47.1.1.1.1.2  | textual description of the entity |
@@ -58,13 +70,9 @@ General
 |            | entPhysicalHardwareRev  | 1.3.6.1.2.1.47.1.1.1.1.8  | vendor specific hardware revision |
 |            | entPhysicalFirmwareRev  | 1.3.6.1.2.1.47.1.1.1.1.9  | vendor specific firmware revision |
 
-Printer
-
 | MIB                      | OID                        | Value                          | Description                       |
 |:-------------------------|:---------------------------|:-------------------------------|:----------------------------------|
 | PRINTER-PORT-MONITOR-MIB | ppmPrinterIEEE1284DeviceId | 1.3.6.1.4.1.2699.1.2.1.2.1.1.3 | IEEE 1284 Device id               |
-
-UPS
 
 | MIB     | OID                          | Value                | Description                   |
 |:--------|:-----------------------------|:---------------------|:------------------------------|
