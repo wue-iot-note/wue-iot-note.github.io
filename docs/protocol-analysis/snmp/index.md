@@ -46,7 +46,7 @@ Refer to [BER Encoding] for more details (./ber-encoding/)
 
 ### Common MIB & OID for device identification
 
-#### General
+General
 
 | MIB        | OID                     | Value                     | Description                       |
 |:-----------|:------------------------|:--------------------------|:----------------------------------|
@@ -58,13 +58,13 @@ Refer to [BER Encoding] for more details (./ber-encoding/)
 |            | entPhysicalHardwareRev  | 1.3.6.1.2.1.47.1.1.1.1.8  | vendor specific hardware revision |
 |            | entPhysicalFirmwareRev  | 1.3.6.1.2.1.47.1.1.1.1.9  | vendor specific firmware revision |
 
-#### Printer
+Printer
 
 | MIB                      | OID                        | Value                          | Description                       |
 |:-------------------------|:---------------------------|:-------------------------------|:----------------------------------|
 | PRINTER-PORT-MONITOR-MIB | ppmPrinterIEEE1284DeviceId | 1.3.6.1.4.1.2699.1.2.1.2.1.1.3 | IEEE 1284 Device id               |
 
-#### UPS
+UPS
 
 | MIB     | OID                          | Value                | Description                   |
 |:--------|:-----------------------------|:---------------------|:------------------------------|
