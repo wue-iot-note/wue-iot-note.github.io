@@ -29,16 +29,16 @@ References: [https://www.ranecommercial.com/legacy/note161.html](https://www.ran
 
 ![](./figure-2.jpeg)
 
-### PDU Types
+### Common Data Types
 
-| PDU Type         | Value (hex) |
-|:-----------------|:------------|
-| get-request      | 00          |
-| get-next-request | 01          |
-| get-response     | 02          |
-| set-request      | 03          |
-| trap             | 04          |
-| getBulkRequest   | 05          |
-| informRequest    | 06          |
-| snmpV2-trap      | 07          |
-| report           | 08          |
+| Primitive Type | Identifier | Complex Data Types | Identifier |
+|:---------------|:-----------|:-------------------|:-----------|
+| Integer        | 0x02       | get-request        | 0xA0       |
+| Octet String   | 0x04       | get-next-request   | 0xA1       |
+| Null           | 0x05       | get-response       | 0xA2       |
+| OID            | 0x06       | set-request        | 0xA3       |
+|                |            | trap               | 0x04       |
+|                |            | getBulkRequest     | 0x05       |
+|                |            | informRequest      | 0x06       |
+|                |            | snmpV2-trap        | 0x07       |
+|                |            | report             | 0x08       |
