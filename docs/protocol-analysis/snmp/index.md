@@ -31,6 +31,7 @@ References: [https://www.ranecommercial.com/legacy/note161.html](https://www.ran
 
 ### Common Data Types
 Refer to [BER Encoding] for more details (./ber-encoding/)
+
 | Primitive Type | Identifier | Complex Data Types | Identifier |
 |:---------------|:-----------|:-------------------|:-----------|
 | Integer        | 0x02       | get-request        | 0xA0       |
@@ -46,6 +47,7 @@ Refer to [BER Encoding] for more details (./ber-encoding/)
 ### Common MIB & OID for device identification
 
 #### General
+
 | MIB        | OID                     | Value                     | Description                       |
 |:-----------|:------------------------|:--------------------------|:----------------------------------|
 | MIB-II     | sysDescr                | 1.3.6.1.2.1.1.1           | textual description of the entity |
@@ -57,11 +59,13 @@ Refer to [BER Encoding] for more details (./ber-encoding/)
 |            | entPhysicalFirmwareRev  | 1.3.6.1.2.1.47.1.1.1.1.9  | vendor specific firmware revision |
 
 #### Printer
+
 | MIB                      | OID                        | Value                          | Description                       |
 |:-------------------------|:---------------------------|:-------------------------------|:----------------------------------|
 | PRINTER-PORT-MONITOR-MIB | ppmPrinterIEEE1284DeviceId | 1.3.6.1.4.1.2699.1.2.1.2.1.1.3 | IEEE 1284 Device id               |
 
 #### UPS
+
 | MIB     | OID                          | Value                | Description                   |
 |:--------|:-----------------------------|:---------------------|:------------------------------|
 | UPS-MIB | upsIdentManufacturer         | 1.3.6.1.2.1.33.1.1.1 | UPS manufacturer              |
