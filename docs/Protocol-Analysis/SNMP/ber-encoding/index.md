@@ -1,10 +1,9 @@
 ---
 title: BER Encoding
+parent: snmp
+nav_order: 1
 layout: default
 ---
-
-# BER Encoding
-{: .no_toc }
 
 ## Table of contents
 {: .no_toc .text-delta }
