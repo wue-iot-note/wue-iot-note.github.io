@@ -30,6 +30,7 @@ References: [https://www.ranecommercial.com/legacy/note161.html](https://www.ran
 ![](./figure-2.jpeg)
 
 ### PDU Types
+
 | PDU Type         | Value (hex) |
 |:-----------------|:------------|
 | get-request      | 00          |
