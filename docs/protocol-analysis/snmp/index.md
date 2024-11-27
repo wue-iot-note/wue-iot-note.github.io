@@ -37,7 +37,7 @@ References: [https://www.ranecommercial.com/legacy/note161.html](https://www.ran
 ```
 
 ### Common Data Types
-Refer to [BER Encoding] for more details (./ber-encoding/)
+Refer to [BER Encoding](./ber-encoding/) for more details
 
 | Primitive Type | Identifier | Complex Data Types | Identifier |
 |:---------------|:-----------|:-------------------|:-----------|
