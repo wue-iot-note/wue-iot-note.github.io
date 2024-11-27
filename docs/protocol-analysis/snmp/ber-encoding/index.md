@@ -42,7 +42,7 @@ The identifier consists of three parts:
     </tbody>
 </table>
 
-#### Class
+<b>Class<b>
 
 - [ 00 ] universal class. Most BER elements have a universal type, so any element with a universal type specifies what kind of data it holds. Examples of universal types include 0x01 (BOOLEAN), 0x02 (INTEGER), 0x04 (OCTET STRING), 0x05 (NULL), 0x0A (ENUMERATED), 0x30 (SEQUENCE), and 0x31 (SET). The binary encodings for all of those type values have the leftmost two bits set to zero.
 
@@ -52,12 +52,12 @@ The identifier consists of three parts:
 
 - [ 11 ] The private class, not typically used in LDAP.
 
-#### Form
+<b>Form<b>
 
 - [ 0 ] primitive - is used with types that do not contain other types (INTEGERs and BOOLEANs). The contents octets directly represent the encoded value.
 - [ 1 ] constructed - is used for types that can include values of other types (SEQUENCEs).
 
-#### Number
+<b>Number<b>
 
 - 0 <= tag <= 30, the last five bits of the identifier octet as an unsigned binary integer.
 - 31 < =tag <= 127, the last five bits of this first octet are all set to 1, and the actual value of the tag's number is encoded in one or more following octets. The final octet of this series has bit 7 set to 0.
@@ -74,4 +74,4 @@ There are three ways to encode lengths in BER:
 
 ## References
 [https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/asn1-tags.html](https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/asn1-tags.html)<br>
-[https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/basic-encoding-rules.html](https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/basic-encoding-rules.html)
+[https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/basic-encoding-rules.html](https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/basic-encoding-rules.html)<br>
