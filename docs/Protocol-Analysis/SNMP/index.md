@@ -6,7 +6,7 @@ layout: default
 has_toc: false
 ---
 
-# Class D
+# SNMP
 {: .no_toc }
 
 ## Table of contents

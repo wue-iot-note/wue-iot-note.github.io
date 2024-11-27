@@ -74,9 +74,13 @@ tcp.payload[0:2] == 02:02 && tcp.payload[6:1] == 01 &&  tcp.payload[13:2] == XX:
 ```
 
 ### EMP Message Body - Application
-[Interoperable Train Control Wayside Interface Unit](./itc-wiu/)
+[Interoperable Train Control Messaging](./itcm/)
+
+### Resource links
+[ROSA P](https://rosap.ntl.bts.gov/)<br>
+[FRA eLibrary](https://railroads.dot.gov/elibrary-search)<br>
 
 ### Reference
-- AAR Manual of Standards and Recommended Practices Railway Electronics - CLASS D MESSAGING SPECIFICATION
-Standard S-9356
+- AAR Manual of Standards and Recommended Practices Railway Electronics - CLASS D MESSAGING SPECIFICATION Standard S-9356
 - Federal Railroad Administration - Railroad Wireless Communications Roadmap
+- AAR Manual of Standards and Recommended Practices Railway Electronics - Edge Message Protocol SPecification Standard S-9354

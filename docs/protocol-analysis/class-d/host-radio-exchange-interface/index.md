@@ -1,7 +1,7 @@
 ---
 title: Host Radio Exchange Interface
 parent: Class D
-nav_order: 1
+nav_order: 2
 layout: default
 ---
 
