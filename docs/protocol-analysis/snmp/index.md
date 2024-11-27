@@ -42,3 +42,29 @@ Refer to [BER Encoding] for more details (./ber-encoding/)
 |                |            | informRequest      | 0x06       |
 |                |            | snmpV2-trap        | 0x07       |
 |                |            | report             | 0x08       |
+
+### Common MIB & OID for device identification
+
+#### General
+| MIB        | OID                     | Value                     | Description                       |
+|:-----------|:------------------------|:--------------------------|:----------------------------------|
+| MIB-II     | sysDescr                | 1.3.6.1.2.1.1.1           | textual description of the entity |
+| ENTITY-MIB | entPhysicalSoftwareRev  | 1.3.6.1.2.1.47.1.1.1.1.10 | vendor specifc software revision  |
+|            | entPhysicalModelName    | 1.3.6.1.2.1.47.1.1.1.1.13 | vendor specific model name        |
+|            | entPhysicalDescr        | 1.3.6.1.2.1.47.1.1.1.1.2  | textual description of the entity |
+|            | entPhysicalName         | 1.3.6.1.2.1.47.1.1.1.1.7  | textual name of entity            |
+|            | entPhysicalHardwareRev  | 1.3.6.1.2.1.47.1.1.1.1.8  | vendor specific hardware revision |
+|            | entPhysicalFirmwareRev  | 1.3.6.1.2.1.47.1.1.1.1.9  | vendor specific firmware revision |
+
+#### Printer
+| MIB                      | OID                        | Value                          | Description                       |
+|:-------------------------|:---------------------------|:-------------------------------|:----------------------------------|
+| PRINTER-PORT-MONITOR-MIB | ppmPrinterIEEE1284DeviceId | 1.3.6.1.4.1.2699.1.2.1.2.1.1.3 | IEEE 1284 Device id               |
+
+#### UPS
+| MIB     | OID                          | Value                | Description                   |
+|:--------|:-----------------------------|:---------------------|:------------------------------|
+| UPS-MIB | upsIdentManufacturer         | 1.3.6.1.2.1.33.1.1.1 | UPS manufacturer              |
+|         | upsIdentModel                | 1.3.6.1.2.1.33.1.1.2 | UPS model                     |
+|         | upsIdentUPSSoftwareVersion   | 1.3.6.1.2.1.33.1.1.3 | UPS firmware/software version |
+|         | upsIdentAgentSoftwareVersion | 1.3.6.1.2.1.33.1.1.4 | UPS agent software version    |
