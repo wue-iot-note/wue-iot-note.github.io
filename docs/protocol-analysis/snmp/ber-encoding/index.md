@@ -72,3 +72,6 @@ There are three ways to encode lengths in BER:
 
 ![](./figure-1.jpeg)
 
+## References
+[https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/asn1-tags.html](https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/asn1-tags.html)<br>
+[https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/basic-encoding-rules.html](https://www.oss.com/asn1/resources/asn1-made-simple/asn1-quick-reference/basic-encoding-rules.html)
