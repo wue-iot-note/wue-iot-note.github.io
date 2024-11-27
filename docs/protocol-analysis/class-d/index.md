@@ -1,8 +1,7 @@
 ---
 title: Class D
 parent: Protocol Analysis
-nav_order: 1
-layout: default
+nav_order: 3
 has_toc: false
 ---
 
