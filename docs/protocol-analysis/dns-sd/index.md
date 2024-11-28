@@ -43,7 +43,8 @@ _sip._tcp.example.com. 86400 IN SRV 0 5 5060 sipserver.example.com.
 
 This points to a server named sipserver.example.com listening on TCP port 5060 for Session Initiation Protocol (SIP) protocol services. The priority given here is 0, and the weight is 5.<br>
 
-A client can discover list of available instances of a given service type using a query for a DNS PTR [RFC 1035] record with a name of the form "<Service>.<Domain>", which returns a set of zero or more names. The example below uses linux "dig" command to do so. References: [https://www.rfc-editor.org/rfc/rfc6763.html#section-7.2](https://www.rfc-editor.org/rfc/rfc6763.html#section-7.2)
+A client can discover list of available instances of a given service type using a query for a DNS PTR [RFC 1035] record with a name of the form "<Service>.<Domain>", which returns a set of zero or more names. The example below uses linux "dig" command to do so.<br>
+References: [https://www.rfc-editor.org/rfc/rfc6763.html#section-7.2](https://www.rfc-editor.org/rfc/rfc6763.html#section-7.2)
 
 ```
 dig _axis-video._tcp.local ptr @10.0.0.1 -p 5353
