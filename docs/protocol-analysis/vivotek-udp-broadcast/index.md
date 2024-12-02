@@ -50,3 +50,8 @@ Response<br>
 ```
 echo -n "01ABCDEF03" | xxd -r -p | netcat -u -p 5678 XXX.XXX.XXX.XXX 10000
 ```
+
+### Wireshark Filter
+```
+udp.payload[0:1] == 02 && udp.payload[4:2] == 03:01 && udp.srcport==10000
+```
