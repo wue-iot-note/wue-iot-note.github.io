@@ -75,3 +75,20 @@ dig _axis-nvr._tcp.local ptr @XXX.XXX.XXX.XXX -p 5353
 00a0   00 00 00 0a 00 04 80 df 0a 0e c0 62 00 01 00 01   ...........b....
 00b0   00 00 00 0a 00 04 a9 fe 6b a5                     ........k.
 ```
+
+## Vivotek - UDP port 10000
+References:<br>
+[https://www.vivotek.com/products/software/shepherd](https://www.vivotek.com/products/software/shepherd)<br>
+[https://github.com/julienblitte/UniversalScanner/blob/master/UniversalScanner/Vivotek.cs](https://github.com/julienblitte/UniversalScanner/blob/master/UniversalScanner/Vivotek.cs)<br>
+*The hex value "ABCDEF" seems to be session identifier, thus value can vary
+```
+echo -n "01ABCDEF03" | xxd -r -p | netcat -u -p 5678 XXX.XXX.XXX.XXX 10000
+```
+```
+0000   02 f5 dd 76 03 01 11 49 42 39 33 36 30 2d 56 56   ...v...IB9360-VV
+0010   54 4b 2d 30 32 32 33 62 02 06 00 02 d1 97 64 70   TK-0223b......dp
+0020   03 04 a9 fe 08 2a 04 24 06 02 3d 22 16 02 bb 01   .....*.$..="....
+0030   08 02 65 6e 09 08 49 42 39 33 36 30 2d 48 10 04   ..en..IB9360-H..
+0040   03 00 82 00 0a 01 00 17 03 01 01 81 05 04 00 00   ................
+0050   00 00                                             ..
+```
