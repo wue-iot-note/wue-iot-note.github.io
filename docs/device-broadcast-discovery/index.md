@@ -14,7 +14,7 @@ nav_order: 2
 
 ---
 
-## HID Global - VertX Controller UPD Discovery
+## HID Global - VertX Controller UDP Discovery
 References:<br>
 [https://www.zerodayinitiative.com/advisories/ZDI-16-223/](https://www.zerodayinitiative.com/advisories/ZDI-16-223/)<br>
 [https://github.com/coldfusion39/VertXploit/tree/master](https://github.com/coldfusion39/VertXploit/tree/master)
