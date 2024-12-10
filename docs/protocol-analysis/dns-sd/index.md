@@ -50,8 +50,9 @@ References: [https://www.rfc-editor.org/rfc/rfc6763.html#section-7.2](https://ww
 dig _axis-video._tcp.local ptr @10.0.0.1 -p 5353
 ```
 
-## IoT device SRV record list
+## IoT device SRV record ptr
 ```
+_device-info._tcp.local # General device info
 _axis-video._tcp.local  # Axis
 _qdiscover._tcp.local   # QNAP 
 ```
