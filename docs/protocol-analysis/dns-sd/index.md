@@ -47,12 +47,17 @@ A client can discover list of available instances of a given service type using 
 References: [https://www.rfc-editor.org/rfc/rfc6763.html#section-7.2](https://www.rfc-editor.org/rfc/rfc6763.html#section-7.2)
 
 ```
-dig _axis-video._tcp.local ptr @10.0.0.1 -p 5353
+dig _axis-video._tcp.local PTR @10.0.0.1 -p 5353 # SRV Record
+dig _axis-video._tcp.local TXT @10.0.0.1 -p 5353 # TXT Record
 ```
 
 ## IoT device SRV record ptr
 ```
-_device-info._tcp.local # General device info
-_axis-video._tcp.local  # Axis
-_qdiscover._tcp.local   # QNAP 
+_device-info._tcp.local  # General device info
+_axis-video._tcp.local   # Axis Camera
+_qdiscover._tcp.local    # QNAP Camera
+_qsan-storage._tcp.local # QSAN NAS
 ```
+
+## References
+[https://www.rfc-editor.org/rfc/rfc6763.html](https://www.rfc-editor.org/rfc/rfc6763.html)
