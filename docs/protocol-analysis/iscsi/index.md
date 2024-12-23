@@ -52,8 +52,14 @@ iscsiadm -m node -T targetname -p ipaddress
 iscsiadm -m node -s -T targetname -p ipaddress
 ```
 
-## Sample Reply Hex Dump (Discovery)
-bit [4:5] indicates the flow of traffic. (..10) indicates a server reply, (..00) indicates request.
+### Qualified Name (IQN)
+The iSCSI Qualified Name (IQN) format takes the form iqn.yyyy-mm.naming-authority:unique name
+- yyyy-mm is the year and month when the naming authority was established
+- naming-authority is the reverse syntax of the Internet domain name of the naming authority. For example, the iscsi.vmware.com naming authority can have the iSCSI qualified name form of iqn.1998-01.com.vmware.iscsi. The name indicates that the vmware.com domain name was registered in January of 1998, and iscsi is a subdomain, maintained by vmware.com
+- unique name is any name you want to use, for example, the name of your host. The naming authority must make sure that any names assigned following the colon are unique, such as:
+
+### Sample Reply Hex Dump (Discovery)
+bit [4:5] in the Opcode section indicates the flow of traffic. (..10) indicates a server reply, (..00) indicates request.
 ```
 iSCSI (Text Response) 
     ..10 0100 = Opcode: Text Response (0x24)
