@@ -76,7 +76,7 @@ iSCSI (Text Response)
     MaxCmdSN: 2 (0x00000002)
     Key/Value Pairs
         KeyValue: TargetName=iqn.2004-04.com.qnap:ts-431u:iscsi.vmware.fa8a99
-        KeyValue: TargetAddress=202.28.247.119:3260,1
+        KeyValue: TargetAddress=XXX.XX.XXX.XXX:3260,1
         KeyValue: TargetAddress=192.168.100.250:3260,1
     Padding: 000000
 
@@ -87,8 +87,8 @@ iSCSI (Text Response)
 0040   30 30 34 2d 30 34 2e 63 6f 6d 2e 71 6e 61 70 3a   004-04.com.qnap:
 0050   74 73 2d 34 33 31 75 3a 69 73 63 73 69 2e 76 6d   ts-431u:iscsi.vm
 0060   77 61 72 65 2e 66 61 38 61 39 39 00 54 61 72 67   ware.fa8a99.Targ
-0070   65 74 41 64 64 72 65 73 73 3d 32 30 32 2e 32 38   etAddress=202.28
-0080   2e 32 34 37 2e 31 31 39 3a 33 32 36 30 2c 31 00   .247.119:3260,1.
+0070   65 74 41 64 64 72 65 73 73 3d XX XX XX 2e XX XX   etAddress=XXX.XX
+0080   2e XX XX XX 2e XX XX XX 3a 33 32 36 30 2c 31 00   .XXX.XXX:3260,1.
 0090   54 61 72 67 65 74 41 64 64 72 65 73 73 3d 31 39   TargetAddress=19
 00a0   32 2e 31 36 38 2e 31 30 30 2e 32 35 30 3a 33 32   2.168.100.250:32
 00b0   36 30 2c 31 00 00 00 00                           60,1....
