@@ -21,6 +21,7 @@ The Discovery and Configuration Protocol (DCP) for Profinet is a link layer prot
 ### Basic Structure
 PROFINET Real-Time Ethernet frame
 ![](./figure-1.png)
+![](./figure-2.jpeg)
 
 ### Sig
 
