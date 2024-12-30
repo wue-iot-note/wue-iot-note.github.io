@@ -27,6 +27,10 @@ PROFINET DCP PDU
 ![](./figure-3.png)
 ![](./figure-4.png)
 
+PDU Data Block
+![](./figure-5.png)
+
+
 ### Reference
 [https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h)<br>
 [https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.c](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.c)<br>
