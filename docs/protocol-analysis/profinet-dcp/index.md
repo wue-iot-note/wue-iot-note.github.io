@@ -21,17 +21,17 @@ The Discovery and Configuration Protocol (DCP) for Profinet is a link layer prot
 ### Basic Structure
 PROFINET Real-Time Ethernet frame
 ![](./figure-1.png)
-![](./figure-2.jpeg)
+![](./figure-2.png)
 
 PROFINET DCP PDU
 ![](./figure-3.png)
 ![](./figure-4.png)
 
 ### Reference
-(Wireshark Dissector packet-pn.h)[https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h]<br>
-(Wireshark Dissector packet-pn.c)[https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.c]<br>
-(Wireshark Dissector packet-pn-dcp.c)[https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn-dcp.c]<br>
-(https://us.profinet.com/profinet-network-geeks-want/)[https://us.profinet.com/profinet-network-geeks-want/]
+[https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h)<br>
+[https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.c](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.c)<br>
+[https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn-dcp.c](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn-dcp.c)<br>
+[https://us.profinet.com/profinet-network-geeks-want/](https://us.profinet.com/profinet-network-geeks-want/)
 
 ### Sig
 
