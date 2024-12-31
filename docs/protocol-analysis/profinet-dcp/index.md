@@ -30,6 +30,8 @@ PROFINET DCP PDU
 PDU Data Block
 ![](./figure-5.png)
 
+### Registered Vendor-ID
+[Man_ID_Table.xml](https://www.profibus.com/IM/Man_ID_Table.xml)
 
 ### Reference
 [https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h)<br>
