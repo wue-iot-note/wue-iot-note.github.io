@@ -56,7 +56,7 @@ Block: Device/Device Role, BlockInfo: Reserved, IO-Device
 ```
 
 For manufacturer specifc device ID, find the device relavent GSD file from PI's [product finder](https://www.profibus.com/products/product-finder#c84). The XML file should contains the value for identifying specfic product<br>
-Below sample is part of the GSD file for Siemens'
+Below sample is part of the GSD file for Siemens' SINAMICS G120D
 ```
 <ProfileBody>
 		<DeviceIdentity VendorID="0x002A" DeviceID="0x0507">
