@@ -30,12 +30,32 @@ PROFINET DCP PDU
 PDU Data Block
 ![](./figure-5.png)
 
-### Registered Vendor-ID
-[Man_ID_Table.xml](https://www.profibus.com/IM/Man_ID_Table.xml)
+### Device Identification
+VendorID can be used to identify manufacturer, list of vendor ID can be found at [Man_ID_Table.xml](https://www.profibus.com/IM/Man_ID_Table.xml)<br>
+```
+# Sample Wireshark Dissector Info, 002a is vendor ID for Siemens AG
+Block: Device/Device ID, BlockInfo: Reserved, VendorID: 0x002a / DeviceID: 0x0301
+    Option: Device properties (2)
+    Suboption: Device ID (3)
+    DCPBlockLength: 6
+    BlockInfo: Reserved (0)
+    VendorID: 0x002a
+    DeviceID: 0x0301
+```
+
+Device Role signifing the type of device (e.g. 'IO-Controller')
+```
+Block: Device/Device Role, BlockInfo: Reserved, IO-Device
+    Option: Device properties (2)
+    Suboption: Device Role (4)
+    DCPBlockLength: 4
+    BlockInfo: Reserved (0)
+    DeviceRoleDetails: 0x01
+    Reserved: 0
+```
 
 ### Reference
 [https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h)<br>
 [https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.c](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.c)<br>
 [https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn-dcp.c](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn-dcp.c)<br>
 [https://us.profinet.com/profinet-network-geeks-want/](https://us.profinet.com/profinet-network-geeks-want/)
-
