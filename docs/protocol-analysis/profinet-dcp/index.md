@@ -32,6 +32,7 @@ PDU Data Block
 
 ### Device Identification
 VendorID can be used to identify manufacturer, list of vendor ID can be found at [Man_ID_Table.xml](https://www.profibus.com/IM/Man_ID_Table.xml)<br>
+For Siemens device, the DeviceID has the format (DeviceClass/DeviceFamily)
 ```
 # Sample Wireshark Dissector Info, 002a is vendor ID for Siemens AG
 Block: Device/Device ID, BlockInfo: Reserved, VendorID: 0x002a / DeviceID: 0x0301
@@ -53,6 +54,16 @@ Block: Device/Device Role, BlockInfo: Reserved, IO-Device
     DeviceRoleDetails: 0x01
     Reserved: 0
 ```
+
+For manufacturer specifc device ID, find the device relavent GSD file from PI's [product finder](https://www.profibus.com/products/product-finder#c84). The XML file should contains the value for identifying specfic product<br>
+Below sample is part of the GSD file for Siemens'
+```
+<ProfileBody>
+		<DeviceIdentity VendorID="0x002A" DeviceID="0x0507">
+			<InfoText TextId="IDT_FamilyDescription"/>
+			<VendorName Value="Siemens AG"/>
+```
+
 
 ### Reference
 [https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h](https://github.com/boundary/wireshark/blob/master/plugins/profinet/packet-pn.h)<br>
