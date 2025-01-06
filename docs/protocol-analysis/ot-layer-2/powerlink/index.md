@@ -97,4 +97,5 @@ Ethernet POWERLINK
 [https://reference.opcfoundation.org/POWERLINK/v100/docs/4.1](https://reference.opcfoundation.org/POWERLINK/v100/docs/4.1)<br>
 [https://www.bronkhorst.com/int/products/accessories-and-software/flowware/powerlink-xdd/](https://www.bronkhorst.com/int/products/accessories-and-software/flowware/powerlink-xdd/)<br>
 [https://github.com/epl-viz/resources/blob/master/pcaps/2017-03-17_br_robot_normal.pcapng.gz](https://github.com/epl-viz/resources/blob/master/pcaps/2017-03-17_br_robot_normal.pcapng.gz)<br>
-[https://github.com/wireshark/wireshark/blob/master/epan/dissectors/packet-epl.c](https://github.com/wireshark/wireshark/blob/master/epan/dissectors/packet-epl.c)
+[https://github.com/wireshark/wireshark/blob/master/epan/dissectors/packet-epl.c](https://github.com/wireshark/wireshark/blob/master/epan/dissectors/packet-epl.c)<br>
+[https://www.can-cia.org/services/canopen-vendor-id](https://www.can-cia.org/services/canopen-vendor-id)
