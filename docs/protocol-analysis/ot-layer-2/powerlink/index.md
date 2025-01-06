@@ -36,6 +36,10 @@ IdentRequest
 ```
 epl.soa.svid == 1
 ```
+C_DLL_MULTICAST_ASND - POWERLINK ASnd multicast MAC address
+```
+eth.dst == 01:11:1e:00:00:04
+```
 
 Sample 1
 ```
