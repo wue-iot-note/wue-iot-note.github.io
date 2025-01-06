@@ -22,7 +22,9 @@ Ethernet POWERLINK is a real-time protocol that allows devices from different ma
 This section focuses on frame strucutre relavent to device identification. For additional info for other purposes, refer to "POWERLINK Communication Profile Specification" from [Technical documents](https://www.br-automation.com/en/technologies/powerlink/service-downloads/technical-documents/) site.
 
 POWERLINK Ethernet frame
-![](./figure-1.jpeg)
+![](./figure-1.png)
 
 PDU for Asynchronous Send - IdentityResponse
-![](./figure-2.jpeg)
+![](./figure-2.png)
+
+### Basic Structure
