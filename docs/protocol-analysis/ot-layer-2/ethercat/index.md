@@ -81,7 +81,7 @@ EtherCAT Mailbox Protocol:CoE SDO Req : 'Initiate Upload' (2) Idx=0x2106 Sub=0
 ```
 
 In Can over EtherCAT (CoE), an index and subindex are used to identify and access parameters of an EtherCAT device. The below example shows the index for device identification.
-![](./figure-2.png)
+![](./figure-3.png)
 
 For vendor specific object dictionary, refer to device specification file or manual such as ESI, EDS, XDD file.
 
