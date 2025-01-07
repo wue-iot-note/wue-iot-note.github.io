@@ -1,5 +1,5 @@
 ---
-title: CoE (CANopen over EtherCAT)
+title: CoE
 parent: EtherCAT
 nav_order: 1
 ---

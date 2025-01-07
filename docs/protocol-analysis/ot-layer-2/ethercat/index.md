@@ -19,3 +19,9 @@ nav_order: 2
 EtherCAT (Ethernet for Control Automation Technology) is an Ethernet-based fieldbus system developed by Beckhoff Automation.
 
 ### Basic Structure
+
+EtherCAT ethernet frame header
+![](./figure-1.png)
+
+EtherCAT telegram
+![](./figure-2.png)
