@@ -90,4 +90,5 @@ For vendor specific object dictionary, refer to device specification file or man
 [https://www.beckhoff.com/de-de/support/downloadfinder/suchergebnis/?c-1=27833244](https://www.beckhoff.com/de-de/support/downloadfinder/suchergebnis/?c-1=27833244)<br>
 [Omron - EtherCAT Communication Manual](https://edata.omron.com.au/eData/Vision/Q179-E1-01.pdf)<br>
 [https://infosys.beckhoff.com/english.php?content=../content/1033/ax86x0_object/7809564171.html&id=](https://infosys.beckhoff.com/english.php?content=../content/1033/ax86x0_object/7809564171.html&id=)<br>
-[Kollmorgen - How to capture and use EtherCAT trace data with WireShark](https://www.kollmorgen.com/sites/default/files/How%20to%20capture%20and%20use%20WireShark%20trace%20data%20with%20EtherCAT%20applications.pdf)
+[Kollmorgen - How to capture and use EtherCAT trace data with WireShark](https://www.kollmorgen.com/sites/default/files/How%20to%20capture%20and%20use%20WireShark%20trace%20data%20with%20EtherCAT%20applications.pdf)<br>
+[EtherCAT Device Protocol](https://www.ethercat.org/download/documents/ethercat_device_protocol_poster.pdf)
