@@ -230,6 +230,8 @@ echo -n "01000000" | xxd -r -p | netcat -u XXX.XXX.XXX.XXX 10001
 ```
 
 ## Hikvision - SADP UDP port 37020
+References:<br>
+[https://github.com/julienblitte/UniversalScanner/blob/master/UniversalScanner/Hikvision.cs](https://github.com/julienblitte/UniversalScanner/blob/master/UniversalScanner/Hikvision.cs)
 ```
 echo -n '<?xml version="1.0" encoding="utf-8"?><Probe><Uuid>{0}</Uuid><Types>inquiry</Types></Probe>' | netcat -u 10.0.0.1 37020
 ```
