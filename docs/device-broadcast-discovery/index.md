@@ -192,6 +192,8 @@ echo -ne '\xff'|nc -u 218.5.136.140 37810
 ```
 
 ## Advantech - UDP discovery port 5048
+References:<br>
+[https://github.com/julienblitte/UniversalScanner/blob/master/UniversalScanner/Advantech.cs](https://github.com/julienblitte/UniversalScanner/blob/master/UniversalScanner/Advantech.cs)
 ```
 echo -n "4D41444100000083010050(print "%0*d 84)20000000000000" | xxd -r -p | netcat -u XXX.XXX.XXX.XXX 5048
 ```
@@ -205,4 +207,24 @@ echo -n "4D41444100000083010050(print "%0*d 84)20000000000000" | xxd -r -p | net
 0060   31 30 32 30 00 00 00 18 41 44 41 4d 36 30 36 30   1020....ADAM6060
 0070   20 44 69 67 69 74 61 6c 20 49 2f 4f 20 4d 6f 64    Digital I/O Mod
 0080   75 6c 65 00 00                                    ule..
+```
+
+## Ubiquiti - UBNT Discovery UDP port 10001
+References:<br>
+[https://github.com/julienblitte/UniversalScanner/blob/master/UniversalScanner/Ubiquiti.cs](https://github.com/julienblitte/UniversalScanner/blob/master/UniversalScanner/Ubiquiti.cs)<br>
+[https://github.com/MatrixEditor/ubnt-discovery-tool/blob/master/ubnt.lua](https://github.com/MatrixEditor/ubnt-discovery-tool/blob/master/ubnt.lua)<br>
+[https://gist.github.com/sgrodzicki/265273ff0ede952d6fcd1a1eedb6aa60](https://gist.github.com/sgrodzicki/265273ff0ede952d6fcd1a1eedb6aa60)
+```
+echo -n "01000000" | xxd -r -p | netcat -u XXX.XXX.XXX.XXX 10001
+```
+```
+0000   01 00 00 7d 02 00 0a [      MAC      ] [ IPADDR   ...}....*.!}.g-.
+0010    ] 02 00 0a [      MAC      ] [  IPADDR ] 01 00   .....*. }.......
+0020   06 80 2a a8 20 7d a5 0a 00 04 00 1d 2a c9 0b 00   ..*. }......*...
+0030   0a 61 69 72 47 61 74 65 77 61 79 0c 00 03 41 47   .airGateway...AG
+0040   57 0d 00 0c 52 69 64 67 65 43 6f 74 74 61 67 65   W...RidgeCottage
+0050   0e 00 01 03 03 00 25 41 69 72 47 57 2e 61 72 39   ......%AirGW.ar9
+0060   33 33 78 2e 76 31 2e 31 2e 36 2e 32 38 30 36 32   33x.v1.1.6.28062
+0070   2e 31 35 30 37 33 31 2e 31 35 31 30 10 00 02 e4   .150731.1510....
+0080   c2                                                .
 ```
