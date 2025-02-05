@@ -228,3 +228,72 @@ echo -n "01000000" | xxd -r -p | netcat -u XXX.XXX.XXX.XXX 10001
 0070   2e 31 35 30 37 33 31 2e 31 35 31 30 10 00 02 e4   .150731.1510....
 0080   c2                                                .
 ```
+
+## Hikvision - SADP UDP port 37020
+```
+echo -n '<?xml version="1.0" encoding="utf-8"?><Probe><Uuid>{0}</Uuid><Types>inquiry</Types></Probe>' | netcat -u 10.0.0.1 37020
+```
+```
+0000   3c 3f 78 6d 6c 20 76 65 72 73 69 6f 6e 3d 22 31   <?xml version="1
+0010   2e 30 22 20 65 6e 63 6f 64 69 6e 67 3d 22 55 54   .0" encoding="UT
+0020   46 2d 38 22 3f 3e 0d 0a 3c 50 72 6f 62 65 4d 61   F-8"?>..<ProbeMa
+0030   74 63 68 3e 3c 55 75 69 64 3e XX XX XX XX XX XX   tch><Uuid>XXXXXX
+0040   XX XX 2d XX XX XX XX 2d XX XX XX XX 2d XX XX XX   XX-XXXX-XXXX-XXX
+0050   XX 2d XX XX XX XX XX XX XX XX XX XX XX XX 3c 2f   X-XXXXXXXXXXXX</
+0060   55 75 69 64 3e 0d 0a 3c 54 79 70 65 73 3e 69 6e   Uuid>..<Types>in
+0070   71 75 69 72 79 3c 2f 54 79 70 65 73 3e 0d 0a 3c   quiry</Types>..<
+0080   44 65 76 69 63 65 54 79 70 65 3e 31 33 39 37 38   DeviceType>13978
+0090   33 3c 2f 44 65 76 69 63 65 54 79 70 65 3e 0d 0a   3</DeviceType>..
+00a0   3c 44 65 76 69 63 65 44 65 73 63 72 69 70 74 69   <DeviceDescripti
+00b0   6f 6e 3e 44 53 2d 32 43 44 32 30 32 32 57 44 2d   on>DS-2CD2022WD-
+00c0   49 3c 2f 44 65 76 69 63 65 44 65 73 63 72 69 70   I</DeviceDescrip
+00d0   74 69 6f 6e 3e 0d 0a 3c 44 65 76 69 63 65 53 4e   tion>..<DeviceSN
+00e0   3e XX XX 2d XX XX XX XX XX XX XX XX XX 2d XX XX   >XX-XXXXXXXXX-XX
+00f0   XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX   XXXXXXXXXXXXXXXX
+0100   XX XX XX XX 3c 2f 44 65 76 69 63 65 53 4e 3e 0d   XXXX</DeviceSN>.
+0110   0a 3c 43 6f 6d 6d 61 6e 64 50 6f 72 74 3e 38 30   .<CommandPort>80
+0120   30 30 3c 2f 43 6f 6d 6d 61 6e 64 50 6f 72 74 3e   00</CommandPort>
+0130   0d 0a 3c 48 74 74 70 50 6f 72 74 3e 38 30 3c 2f   ..<HttpPort>80</
+0140   48 74 74 70 50 6f 72 74 3e 0d 0a 3c 4d 41 43 3e   HttpPort>..<MAC>
+0150   XX XX 2d XX XX 2d XX XX 2d XX XX 2d XX XX 2d XX   XX-XX-XX-XX-XX-X
+0160   XX 3c 2f 4d 41 43 3e 0d 0a 3c 49 50 76 34 41 64   X</MAC>..<IPv4Ad
+0170   64 72 65 73 73 3e XX XX 2e XX XX 2e XX XX XX 2e   dress>XX.XX.XXX.
+0180   XX XX 3c 2f 49 50 76 34 41 64 64 72 65 73 73 3e   XX</IPv4Address>
+0190   0d 0a 3c 49 50 76 34 53 75 62 6e 65 74 4d 61 73   ..<IPv4SubnetMas
+01a0   6b 3e 32 35 35 2e 32 35 35 2e 32 35 35 2e 30 3c   k>255.255.255.0<
+01b0   2f 49 50 76 34 53 75 62 6e 65 74 4d 61 73 6b 3e   /IPv4SubnetMask>
+01c0   0d 0a 3c 49 50 76 34 47 61 74 65 77 61 79 3e 31   ..<IPv4Gateway>1
+01d0   30 2e 39 39 2e 31 36 35 2e 31 3c 2f 49 50 76 34   0.99.165.1</IPv4
+01e0   47 61 74 65 77 61 79 3e 0d 0a 3c 49 50 76 36 41   Gateway>..<IPv6A
+01f0   64 64 72 65 73 73 3e 3a 3a 3c 2f 49 50 76 36 41   ddress>::</IPv6A
+0200   64 64 72 65 73 73 3e 0d 0a 3c 49 50 76 36 47 61   ddress>..<IPv6Ga
+0210   74 65 77 61 79 3e 3a 3a 3c 2f 49 50 76 36 47 61   teway>::</IPv6Ga
+0220   74 65 77 61 79 3e 0d 0a 3c 49 50 76 36 4d 61 73   teway>..<IPv6Mas
+0230   6b 4c 65 6e 3e 30 3c 2f 49 50 76 36 4d 61 73 6b   kLen>0</IPv6Mask
+0240   4c 65 6e 3e 0d 0a 3c 44 48 43 50 3e 66 61 6c 73   Len>..<DHCP>fals
+0250   65 3c 2f 44 48 43 50 3e 0d 0a 3c 41 6e 61 6c 6f   e</DHCP>..<Analo
+0260   67 43 68 61 6e 6e 65 6c 4e 75 6d 3e 30 3c 2f 41   gChannelNum>0</A
+0270   6e 61 6c 6f 67 43 68 61 6e 6e 65 6c 4e 75 6d 3e   nalogChannelNum>
+0280   0d 0a 3c 44 69 67 69 74 61 6c 43 68 61 6e 6e 65   ..<DigitalChanne
+0290   6c 4e 75 6d 3e 31 3c 2f 44 69 67 69 74 61 6c 43   lNum>1</DigitalC
+02a0   68 61 6e 6e 65 6c 4e 75 6d 3e 0d 0a 3c 53 6f 66   hannelNum>..<Sof
+02b0   74 77 61 72 65 56 65 72 73 69 6f 6e 3e 56 35 2e   twareVersion>V5.
+02c0   33 2e 33 62 75 69 6c 64 20 31 35 30 36 33 30 3c   3.3build 150630<
+02d0   2f 53 6f 66 74 77 61 72 65 56 65 72 73 69 6f 6e   /SoftwareVersion
+02e0   3e 0d 0a 3c 44 53 50 56 65 72 73 69 6f 6e 3e 56   >..<DSPVersion>V
+02f0   37 2e 30 20 62 75 69 6c 64 20 31 35 30 36 30 39   7.0 build 150609
+0300   3c 2f 44 53 50 56 65 72 73 69 6f 6e 3e 0d 0a 3c   </DSPVersion>..<
+0310   42 6f 6f 74 54 69 6d 65 3e 32 30 32 32 2d 30 39   BootTime>2022-09
+0320   2d 31 34 20 31 38 3a 30 34 3a 34 32 3c 2f 42 6f   -14 18:04:42</Bo
+0330   6f 74 54 69 6d 65 3e 0d 0a 3c 52 65 73 65 74 41   otTime>..<ResetA
+0340   62 69 6c 69 74 79 3e 66 61 6c 73 65 3c 2f 52 65   bility>false</Re
+0350   73 65 74 41 62 69 6c 69 74 79 3e 0d 0a 3c 44 69   setAbility>..<Di
+0360   73 6b 4e 75 6d 62 65 72 3e 30 3c 2f 44 69 73 6b   skNumber>0</Disk
+0370   4e 75 6d 62 65 72 3e 0d 0a 3c 41 63 74 69 76 61   Number>..<Activa
+0380   74 65 64 3e 74 72 75 65 3c 2f 41 63 74 69 76 61   ted>true</Activa
+0390   74 65 64 3e 0d 0a 3c 50 61 73 73 77 6f 72 64 52   ted>..<PasswordR
+03a0   65 73 65 74 41 62 69 6c 69 74 79 3e 74 72 75 65   esetAbility>true
+03b0   3c 2f 50 61 73 73 77 6f 72 64 52 65 73 65 74 41   </PasswordResetA
+03c0   62 69 6c 69 74 79 3e 0d 0a 3c 2f 50 72 6f 62 65   bility>..</Probe
+03d0   4d 61 74 63 68 3e 0d 0a                           Match>..
+```
