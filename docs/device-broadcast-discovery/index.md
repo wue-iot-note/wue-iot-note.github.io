@@ -135,3 +135,58 @@ echo -n "44480101" | xxd -r -p | netcat -u -p 8601 XXX.XXX.XXX.XXX 8600
 01f0   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00   ................
 0200   00 00 00 00 44 48 01 08 31 39 32 2e               ....DH..192.
 ```
+
+## Dahua - UDP DHCPDiscover port 37810
+References:<br>
+[https://www.shadowserver.org/what-we-do/network-reporting/open-dvr-dhcpdiscover-report/](https://www.shadowserver.org/what-we-do/network-reporting/open-dvr-dhcpdiscover-report/)<br>
+```
+echo -ne '\xff'|nc -u 218.5.136.140 37810
+```
+```
+0000   20 00 00 00 44 48 49 50 00 00 00 00 00 00 00 00    ...DHIP........
+0010   b4 02 00 00 00 00 00 00 b4 02 00 00 00 00 00 00   ................
+0020   7b 22 6d 61 63 22 3a 22 XX XX 3a XX XX 3a XX XX   {"mac":"XX:XX:XX
+0030   3a XX XX 3a XX XX 3a XX XX 22 2c 22 6d 65 74 68   :XX:XX:XX","meth
+0040   6f 64 22 3a 22 63 6c 69 65 6e 74 2e 6e 6f 74 69   od":"client.noti
+0050   66 79 44 65 76 49 6e 66 6f 22 2c 22 70 61 72 61   fyDevInfo","para
+0060   6d 73 22 3a 7b 22 64 65 76 69 63 65 49 6e 66 6f   ms":{"deviceInfo
+0070   22 3a 7b 22 41 6c 61 72 6d 49 6e 70 75 74 43 68   ":{"AlarmInputCh
+0080   61 6e 6e 65 6c 73 22 3a 38 2c 22 41 6c 61 72 6d   annels":8,"Alarm
+0090   4f 75 74 70 75 74 43 68 61 6e 6e 65 6c 73 22 3a   OutputChannels":
+00a0   30 2c 22 44 65 76 69 63 65 43 6c 61 73 73 22 3a   0,"DeviceClass":
+00b0   22 56 54 4f 22 2c 22 44 65 76 69 63 65 54 79 70   "VTO","DeviceTyp
+00c0   65 22 3a 22 56 54 4f 32 30 30 30 41 2d 32 22 2c   e":"VTO2000A-2",
+00d0   22 46 69 6e 64 22 3a 22 42 43 22 2c 22 48 74 74   "Find":"BC","Htt
+00e0   70 50 6f 72 74 22 3a 38 30 2c 22 49 50 76 34 41   pPort":80,"IPv4A
+00f0   64 64 72 65 73 73 22 3a 7b 22 44 65 66 61 75 6c   ddress":{"Defaul
+0100   74 47 61 74 65 77 61 79 22 3a 22 31 39 32 2e 31   tGateway":"192.1
+0110   36 38 2e 31 2e 31 22 2c 22 44 68 63 70 45 6e 61   68.1.1","DhcpEna
+0120   62 6c 65 22 3a 66 61 6c 73 65 2c 22 49 50 41 64   ble":false,"IPAd
+0130   64 72 65 73 73 22 3a 22 31 39 32 2e 31 36 38 2e   dress":"192.168.
+0140   31 2e 32 30 32 22 2c 22 53 75 62 6e 65 74 4d 61   1.202","SubnetMa
+0150   73 6b 22 3a 22 32 35 35 2e 32 35 35 2e 32 35 35   sk":"255.255.255
+0160   2e 30 22 7d 2c 22 49 50 76 36 41 64 64 72 65 73   .0"},"IPv6Addres
+0170   73 22 3a 7b 22 44 65 66 61 75 6c 74 47 61 74 65   s":{"DefaultGate
+0180   77 61 79 22 3a 6e 75 6c 6c 2c 22 44 68 63 70 45   way":null,"DhcpE
+0190   6e 61 62 6c 65 22 3a 66 61 6c 73 65 2c 22 49 50   nable":false,"IP
+01a0   41 64 64 72 65 73 73 22 3a 22 5c 2f 30 22 2c 22   Address":"\/0","
+01b0   4c 69 6e 6b 4c 6f 63 61 6c 41 64 64 72 65 73 73   LinkLocalAddress
+01c0   22 3a 22 XX XX XX XX 3a 3a XX XX XX XX 3a XX XX   ":"XXXX::XXXX:XX
+01d0   XX XX 3a XX XX XX XX 3a 34 66 65 35 5c 2f 36 34   XX:XXXX:4fe5\/64
+01e0   22 7d 2c 22 49 6e 69 74 22 3a 33 32 32 32 2c 22   "},"Init":3222,"
+01f0   4d 61 63 68 69 6e 65 4e 61 6d 65 22 3a 22 35 46   MachineName":"5F
+0200   30 34 36 39 30 50 41 5a 46 30 39 33 34 22 2c 22   04690PAZF0934","
+0210   4d 61 6e 75 66 61 63 74 75 72 65 72 22 3a 22 47   Manufacturer":"G
+0220   65 6e 65 72 61 6c 22 2c 22 50 6f 72 74 22 3a 33   eneral","Port":3
+0230   37 37 37 37 2c 22 52 65 6d 6f 74 65 56 69 64 65   7777,"RemoteVide
+0240   6f 49 6e 70 75 74 43 68 61 6e 6e 65 6c 73 22 3a   oInputChannels":
+0250   30 2c 22 53 65 72 69 61 6c 4e 6f 22 3a 22 XX XX   0,"SerialNo":"5F
+0260   XX XX XX XX XX XX XX XX XX XX XX XX XX 22 2c 22   XXXXXXXXXXXXX","
+0270   56 65 6e 64 6f 72 22 3a 22 47 65 6e 65 72 61 6c   Vendor":"General
+0280   22 2c 22 56 65 72 73 69 6f 6e 22 3a 22 34 2e 33   ","Version":"4.3
+0290   30 30 2e 30 30 30 30 30 30 30 2e 31 2e 52 22 2c   00.0000000.1.R",
+02a0   22 56 69 64 65 6f 49 6e 70 75 74 43 68 61 6e 6e   "VideoInputChann
+02b0   65 6c 73 22 3a 31 2c 22 56 69 64 65 6f 4f 75 74   els":1,"VideoOut
+02c0   70 75 74 43 68 61 6e 6e 65 6c 73 22 3a 31 36 7d   putChannels":16}
+02d0   7d 7d 0a 00                                       }}..
+```
